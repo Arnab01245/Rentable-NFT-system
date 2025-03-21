@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentable NFT System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Rentable NFT System</h1>
+            <p>Your gateway to renting NFTs securely.</p>
+        </header>
+        
+        <section class="nft-list">
+            <h2>Available NFTs for Rent</h2>
+            <div class="nft-cards" id="nft-cards">
+                <!-- NFT cards will be injected here via JavaScript -->
+            </div>
+        </section>
+
+        <section class="rental-form">
+            <h2>Rent an NFT</h2>
+            <form id="rental-form">
+                <label for="nftId">NFT ID:</label>
+                <input type="text" id="nftId" placeholder="Enter NFT ID" required>
+                
+                <label for="rentalDuration">Rental Duration (days):</label>
+                <input type="number" id="rentalDuration" placeholder="Days" required>
+
+                <button type="submit">Rent NFT</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>Rent NFTs securely using smart contracts!</p>
+        </footer>
+    </div>
+
+    <script src="web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
